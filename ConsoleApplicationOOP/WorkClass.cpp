@@ -14,10 +14,12 @@ void WorkClass::startWork() {
         333, "white", "country", 3);
     static_cast<Freezer*>(universalPointer05)->toString();
 
-   /*Родительский класс GoodBasic включает 4 поля, обязательные для всех предметов
-       Родительский класс Электроприборы мог бы включать обязат. для всех ЭЛЕКТРОприборов
-                поля Энергопотребление, шумноть, класс энергоэкономии и другие
-       Конечный дочерний класс Холодильник получает от двух родителей поля и методы, обязательные для
-       предметов и электроприборов и реализует свои личные, которых не может быть у других классов
-       предметов.*/
+    GoodBasic* universalPointer06 = new PC(2);
+    static_cast<PC*>(universalPointer06)->toString();
+    GoodBasic* universalPointer08 = new PC(3, 3333, "NewName");
+    static_cast<PC*>(universalPointer08)->toString();
+    GoodBasic* universalPointer09 = new PC(4, 4444, "NewName", "Some description");
+    static_cast<PC*>(universalPointer09)->toString();
+    GoodBasic* universalPointer10 = new PC(5, 55555, "NewName5", "Some description5", "Test CPU", "Test GPU", "Test Memory","Test Storage","TEST MB", "Test Case");
+    static_cast<PC*>(universalPointer10)->toString();
 }
