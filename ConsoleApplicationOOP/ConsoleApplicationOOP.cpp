@@ -9,7 +9,7 @@
 #include "Software.h"
 #include "WorkClass.h"
 #include "Chipsi.h"
-
+#include "PC.h"
 
 
 int main()
